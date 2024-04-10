@@ -1,4 +1,7 @@
-sM["Damage"] = 999
+ local player = game:GetService("Players").LocalPlayer
+        local gun = player.Backpack:FindFirstChild("M9")
+        local sM = require(gun:FindFirstChild("GunStates"))
+        sM["Damage"] = 999
         sM["MaxAmmo"] = 9999991
         sM["StoredAmmo"] = 9999991
         sM["FireRate"] = 0.05
@@ -7,4 +10,3 @@ sM["Damage"] = 999
         sM["ReloadTime"] = 0.05
         sM["Bullets"] = 1
         sM["AutoFire"] = true
-        end)
